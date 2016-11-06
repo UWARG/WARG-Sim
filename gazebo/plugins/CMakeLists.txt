@@ -17,7 +17,17 @@ set(plugins
     LiftDragPlugin
     hello_model
     )
+
+set(standalone
+    WargSimulator
+    )
+
 foreach (src ${plugins})
     add_library(${src} SHARED ${src}.cc)
     target_link_libraries(${src} ${GAZEBO_LIBRARIES} Qt4::QtGui )
+endforeach()
+
+foreach (exe ${standalone})
+    add_executable(${exe} ${exe}.cc)
+    target_link_libraries(${exe} ${GAZEBO_LIBRARIES} pthread)
 endforeach()
