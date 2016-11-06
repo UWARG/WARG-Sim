@@ -55,4 +55,4 @@ Note that the `<plugin ...` is placed near the end of the model.
 To run gazebo with plugins, one must specify the plugin directory as a environmental variable.
 
 1. `export GAZEBO_PLUGIN_PATH=~/Github/WARG-Sim/plugins/bin`
-2. `gazebo ./WARG_WORLD.world --verbose
+2. `gazebo ./WARG_WORLD.world --verbose`
