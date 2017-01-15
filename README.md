@@ -1,18 +1,21 @@
 # WARG-Sim
 2nd Revision of the WARG Autopilot Simulator using Gazebo
 
-##Arduino Instructions
+## Arduino Instructions
+Simply open up the `main.ino` script in the Arduino IDE, and program an Arduino Mega 2560 with the code as you would with any other arduino. Note that this HAS to be an arduino mega, as other models simply don't have enough IO to meet the requirements of the simulator.
 
-##Gazebo Instructions
+Futher instructions on how to hook everything up are still in development. 
+
+## Gazebo Instructions
 
 For linux usage only.
 
-###Libraries
+### Libraries
 
 * [Gazebo 7.1](http://gazebosim.org/download)
 * cmake - `sudo apt-get install cmake`
 
-###Compiling
+### Compiling
 
 In order to compile the plugins for gazebo the following steps must be completed in the project directory.
 
