@@ -1,0 +1,6 @@
+[submodule "Arduino/libraries/QueueArray"]
+	path = Arduino/libraries/QueueArray
+	url = https://github.com/interactive-matter/QueueArray.git
+[submodule "Arduino/libraries/PinChangeInt"]
+	path = Arduino/libraries/PinChangeInt
+	url = https://github.com/GreyGnome/PinChangeInt/
