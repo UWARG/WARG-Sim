@@ -165,7 +165,7 @@ y, float p, float r, float altitude, double longitude, double latitude){
     //Set cmdID to 0, may be used for future implementations
     ap->commandID = 0;
     ap->length = sizeof(ap->data) & 0xFF;
-    ap->crc = crcRemainder((char*)(&ap->data),ap->length);  
+    ap->crc = crcRemainder((char*)(&(ap->data)),ap->length);  
     cout << ap->data.pitch << endl;
     return ap;
 }
@@ -177,7 +177,7 @@ void Arduino::sendData(ArduinoPacket* ap){
     cout << pLen << endl;
     char sendChar;
     for (int i = 0; i < pLen; i++){
-        sendChar = *((char*)(ap + i));
+        sendChar = *((char*)ap + i);
         serial_port << sendChar;
         cout << " 0b";
         for (int j = 0; j < 8; j++){

@@ -75,7 +75,8 @@ int main(int _argc, char **_argv)
     gazebo::client::setup(_argc, _argv);
 
     //Initialize Arduino
-    Arduino a("/dev/ttyACM0");
+    //Arduino a("/dev/ttyACM0");
+    Arduino a("/dev/ttyUSB0");
 
     // Create our node for communication
     gazebo::transport::NodePtr node(new gazebo::transport::Node());
