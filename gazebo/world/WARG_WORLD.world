@@ -943,7 +943,6 @@
         </inertial>
         <kinematic>0</kinematic>
       </link>
-      <plugin name='hello_model' filename='libhello_model.so'/>
       <plugin name='cessna_control' filename='libCessnaPlugin.so'>
         <propeller>cessna_c172::propeller_joint</propeller>
         <propeller_max_rpm>2500</propeller_max_rpm>
