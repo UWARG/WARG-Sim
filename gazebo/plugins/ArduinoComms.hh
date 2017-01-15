@@ -13,6 +13,8 @@
 using namespace std;
 using namespace LibSerial;
 
+//Note the data is stored in little endian format (byte order), when the data is
+//transfered to the arduino, the arduino may expect it to be big endian.
 typedef struct _DataPayload{
     double longitude, latitude;
     float rollRate, pitchRate, yawRate;
