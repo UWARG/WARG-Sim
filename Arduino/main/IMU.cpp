@@ -170,11 +170,11 @@ static void writeFloatToCharArray(float num1, float num2, float num3, char* writ
   char* x;
 
   for (int i = 0; i < 12; i++) {
-    if (i = 0) {
+    if (i == 0) {
       x = (char*)&num1;
-    } else if (i = 4) {
+    } else if (i == 4) {
       x = (char*)&num2;
-    } else if (i = 8) {
+    } else if (i == 8) {
       x = (char*)&num3;
     }
     writeTo[i] = x[i % 4];
